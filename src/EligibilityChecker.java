@@ -1,6 +1,6 @@
 public class EligibilityChecker {
 
-     EligibilityRule rule[] = {new PercentageRule(),new BacklogRule(),new PassingyearRule()};
+     EligibilityRule rule[] = {new PercentageRule(),new BacklogRule(),new PassingyearRule(),new SkillRule()};
 
 
 

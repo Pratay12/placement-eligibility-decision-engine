@@ -4,18 +4,21 @@ public class Job {
     private double minimumPercentage;
     private int maximumBacklogs;
     private int requiredGraduationYear;
+    private String[] requiredSkills;
 
      Job(
         String company,
         String role,
         double minimumPercentage,
         int maximumBacklogs,
-        int requiredGraduationYear
+        int requiredGraduationYear,
+        String[] requiredSkills
     ){
         this.company = company;
         this.role = role;
         this.minimumPercentage = minimumPercentage;
         this.requiredGraduationYear = requiredGraduationYear;
+        this.requiredSkills = requiredSkills;
     }
 
     public String getCompany(){
@@ -32,6 +35,9 @@ public class Job {
     }
     public int getGraduationYear(){
         return requiredGraduationYear;
+    }
+    public String[] getRequiredSkills() {
+        return requiredSkills;
     }
 
     
